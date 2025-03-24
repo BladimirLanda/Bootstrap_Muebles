@@ -1,4 +1,4 @@
-//GALERY
+//GALLERY
 const modalImagen = document.querySelector("#modal-imagen");
 const imagenModal = document.querySelector("#img-modal");
 
