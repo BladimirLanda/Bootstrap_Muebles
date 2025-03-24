@@ -1,0 +1,140 @@
+/*CSS APP*/
+
+/*Sobrescribiendo Propiedades Bootstrap Root*/
+:root {
+    --bs-blue: #037BC0;
+    --bs-green: #8cbc00;
+}
+
+html {
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+body {
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2; /*Altura Total de la Línea - 2 veces el tamaño de la fuente*/
+}
+
+h1,h2,h3 {
+    font-family: "Playfair Display", serif;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 5rem;
+    }
+}
+
+.navbar-nav a:hover,
+.categoria a:hover,
+.ft-a a:hover,
+.blog-aside ul li a:hover {
+    color: var(--bs-blue)!important;
+}
+
+/*Sobrescribiendo Bootstrap Clases*/
+/*Agregando'!important' para tener alta especificidad (sobre el archivo bootstrap.css)*/
+.text-primary,
+.nombre-sitio {
+    color: var(--bs-blue)!important; 
+}
+
+.bg-primary,
+.btn-primary {
+    background-color: var(--bs-blue)!important;
+}
+
+.btn-success {
+    background-color: var(--bs-green)!important;
+    transition: transform 0.2s linear;
+}
+
+.btn-success:hover {
+    transform: scale(1.01);
+}
+
+.hero {
+    height: 25rem;
+    background-image: url(../img/principal.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+
+@media (min-width: 768px) {
+    .hero {
+        height: 55rem;
+    }
+}
+
+h2 {
+    font-size: 3.2rem;
+}
+
+@media (min-width: 768px) {
+    .h2 {
+        font-size: 4rem;
+    }
+}
+
+h3 {
+    font-size: 2.4rem;
+}
+
+@media (min-width: 768px) {
+    .h3 {
+        font-size: 3rem;
+    }
+}
+
+/*Productos*/
+@media (min-width: 768px) {
+    .producto img {
+        width: 100%;
+        height: 43rem;
+        /*
+        object-fit define cómo se ajusta una imagen dentro de su contenedor cuando el tamaño 
+        de la imagen no coincide exactamente con el del contenedor.
+        -cover: La imagen se ajustará para llenar completamente el contenedor sin deformarse, 
+        recortando partes si es necesario.
+        */
+        object-fit: cover;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1110px) {
+    .texto-producto {
+        white-space: nowrap; /* Evita que el texto se divida en múltiples líneas */
+        overflow: hidden; /* Oculta el texto que sobresale del contenedor */
+        text-overflow: ellipsis; /* Muestra "..." al final del texto recortado */
+    }
+}
+
+/*Categorias*/
+.categoria img {
+    transition: transform 0.2s linear;
+}
+
+.categoria img:hover {
+    transform: scale(1.2);
+    opacity: 0.8;
+    overflow: hidden;
+}
+
+/**/
+.galeria li {
+    margin-bottom: 1rem;
+}
+
+.galeria li:last-of-type {
+    margin-bottom: 0;
+}
+
+.form-control {
+    padding: 1rem;
+    font-size: 1.6rem;
+}
