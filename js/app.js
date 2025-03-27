@@ -15,7 +15,7 @@ if(modalImagen) {
     });
 }
 
-//Validación Formulario Bootstrap
+//Validación Formulario Bootstrap (https://getbootstrap.com/docs/5.0/forms/validation/)
 const forms = document.querySelectorAll('.needs-validation');
 
 if(forms) {
