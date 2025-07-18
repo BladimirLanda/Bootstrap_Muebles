@@ -129,6 +129,10 @@ h3 {
     margin-bottom: 1rem;
 }
 
+.galeria li a img {
+    cursor: zoom-in;
+}
+
 .galeria li:last-of-type {
     margin-bottom: 0;
 }

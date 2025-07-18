@@ -4,6 +4,12 @@ const imagenModal = document.querySelector("#img-modal");
 
 //Eventos Bootstrap
 if(modalImagen) {
+    /*
+    show.bs.modal: Es un evento que se dispara justo antes de que un modal se muestre.
+        -show → indica que está por mostrarse
+        -bs → viene de Bootstrap
+        -modal → el componente afectado
+    */
     modalImagen.addEventListener('show.bs.modal', e => {
     /*
      .relatedTarget: Hace referencia al elemento que activó el modal, es decir, 

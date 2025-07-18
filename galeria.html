@@ -103,12 +103,16 @@
         </ul>
     </main>
 
-    <!--Modal-->
+    <!--
+    Modal
+    class="modal-dialog-centered": Esta clase centra verticalmente el modal en la pantalla. 
+    class="modal-lg": Esta clase hace que el modal sea más ancho de lo normal. 
+    -->
     <div class="modal fade" id="modal-imagen">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-body">
-                    <button type="button" class="btn btn-close fs-3 position-absolute end-0 top-0 m-2" 
+                    <button type="button" class="m-2 btn btn-close fs-3 position-absolute end-0 top-0" 
                     data-bs-dismiss="modal"></button>
                     <!--JS-->
                     <img id="img-modal" src="" alt="img-modal" class="img-fluid">
