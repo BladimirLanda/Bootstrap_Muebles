@@ -116,13 +116,12 @@ h3 {
 
 /*Categorias*/
 .categoria img {
-    transition: transform 0.2s linear;
+    transition: transform 0.3s linear;
 }
 
 .categoria img:hover {
     transform: scale(1.2);
     opacity: 0.8;
-    overflow: hidden;
 }
 
 /**/
